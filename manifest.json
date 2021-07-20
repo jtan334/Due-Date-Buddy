@@ -14,8 +14,13 @@
   "background": {
     "service_worker": "background.js"
   },
+  "oauth2": {
+    "client_id": "yourExtensionOAuthClientIDWillGoHere.apps.googleusercontent.com",
+    "scopes":[""]
+  },
   "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html"
   }
+  
 }
