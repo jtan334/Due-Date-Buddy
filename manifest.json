@@ -16,7 +16,7 @@
   },
   "oauth2": {
     "client_id": "yourExtensionOAuthClientIDWillGoHere.apps.googleusercontent.com",
-    "scopes":[""]
+    "scopes":["https://www.googleapis.com/auth/calendar"]
   },
   "permissions": ["storage"],
   "action": {
