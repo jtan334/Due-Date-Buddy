@@ -10,13 +10,11 @@ window.onload = function() {
           },
           'contentType': 'json'
         };
-        fetch(
-            'https://people.googleapis.com/v1/contactGroups/all?maxMembers=20&key=<API_Key_Here>',
+        POST(
+            'https://www.googleapis.com/calendar/v3/calendars/calendarId/events',
             init)
-            .then((response) => response.json())
-            .then(function(data) {
-              console.log(data)
-            });
+            
+          
       });
     });
   };
