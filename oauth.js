@@ -11,7 +11,7 @@ window.onload = function() {
           'contentType': 'json'
         };
         POST(
-            'https://www.googleapis.com/calendar/v3/calendars/calendarId/events',
+            'https://www.googleapis.com/calendar/v3/calendars/calendarId/events/all?maxMembers=20&key=AIzaSyBbtPeWxmnP7R_Gvjvg2a6F79cqvtM1p1E',
             init)
             
           

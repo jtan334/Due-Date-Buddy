@@ -1,12 +1,16 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "Due Date Buddy",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmRiN9EYVt5WMnyds3xyzQGa2kiF0AFivGY5Sum8wD1vlx0/wu+j0QbCH7LL7hKWKZKPCwsACQ8we0sWXQg8wJ+BoJaHEIPBAu/16uPuZx1UaCx9gxdSJzd/hig+3VNmVRJwx+wRNxJnSnhce3lNO9k8q+ieWoqmwcw7X0O25Lv3b2YfM2Rqejbvd3c9ommE6mCYTSEey+MPIzhcu34MLolKFKslJPz2vAgHPWbSgBs0H4hZLUdFMJDM2SPy0UVc4Z4mBl7noOZIlF7pRMP9tHDwYwxdnlsUSyC3MicPU/qa94ZJclvbirldhBF1Z9EdPoowBY7QBPFA0lMCpo8wtDQIDAQAB",
+  "description": "Save Your Dates In One Click!",
   "version": "1.0",
   "manifest_version": 3,
+  "optional_permissions": [
+    "*://*/*"
+],
   "content_scripts":[
     {
       "matches":  [
-        "<all_urls>"
+        "https://*.uwo.ca/*"
       ],
       "js": ["content.js"]
     }
@@ -15,12 +19,14 @@
     "service_worker": "background.js"
   },
   "oauth2": {
-    "client_id": "yourExtensionOAuthClientIDWillGoHere.apps.googleusercontent.com",
+    "client_id": "679727146740-cmkhgjoa4vcq9td5ugbma1gdvjjhdi2d.apps.googleusercontent.com",
     "scopes":["https://www.googleapis.com/auth/calendar"]
   },
-  "permissions": ["storage"],
+  "permissions": ["identity","storage","activeTab"],
   "action": {
     "default_popup": "popup.html"
+  
   }
+
   
 }
