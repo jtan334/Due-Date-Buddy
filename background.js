@@ -4,3 +4,4 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 chrome.browserAction.onClicked.addListener(function () {
   chrome.tabs.create({ url: "index.html" });
 });
+

@@ -21,7 +21,7 @@
   "oauth2": {
     "client_id": "679727146740-cmkhgjoa4vcq9td5ugbma1gdvjjhdi2d.apps.googleusercontent.com",
     "scopes":["https://www.googleapis.com/auth/calendar"]
-  },
+  },  
   "permissions": ["identity","storage","activeTab"],
   "action": {
     "default_popup": "popup.html"
