@@ -19,8 +19,8 @@
     "service_worker": "background.js"
   },
   "oauth2": {
-    "client_id": "679727146740-cmkhgjoa4vcq9td5ugbma1gdvjjhdi2d.apps.googleusercontent.com",
-    "scopes":["https://www.googleapis.com/auth/calendar"]
+    "client_id": "702552867216-dm3joitogi04681896quhs9tmhg6a3pk.apps.googleusercontent.com",
+    "scopes":[""]
   },  
   "permissions": ["identity","storage","activeTab"],
   "action": {

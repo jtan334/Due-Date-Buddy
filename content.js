@@ -9,4 +9,7 @@ let selection = "hi";
 
 // do stuff with the range
 
-console.log(selection); // Selection object
+console.log("selection"); // Selection object
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    console.log(request.message);
+});

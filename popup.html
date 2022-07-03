@@ -1,44 +1,21 @@
 <html>
+  <head>
+      
+    <title>Due Date Buddy</title>
+    <script type="text/javascript" src="oauth.js"></script>
 
-<head>
-    <title>DraftToCalendar</title>
     <style>
-
-body {
-    min-width:400px;
-}
-.loader {
-  border: 5px solid #f3f3f3; /* Light grey */
-  border-top: 5px solid #4F2683; /* Blue */
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-  display: none;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-        button {
-            color: white;
-            padding: 10px;
-            background-color: #4F2683;
-            display: inline-block;
-         
-        }
-        
+      button {
+        padding: 10px;
+        background-color: #3C79F8;
+        display: inline-block;
+        width: 500px;
+        height: 350px;
+      }
     </style>
-    <script type="text/javascript" src="./oauth.js"></script>
-</head>
-
-<body>
-    <center> <button id ="but">Create Schedule</button>  </center>
-    <center> <div id ="loader" class="loader"></div></center>
-    <p id="message"> If you were just prompted to sign in to google/give permssion, click again to scrape your calendar</p>
-  
-  
-
+  </head>
+  <body>
+    <button>Sign In</button>
+    <div id="friendDiv"></div>
+  </body>
 </html>
